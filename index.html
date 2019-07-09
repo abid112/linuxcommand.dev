@@ -1,0 +1,597 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Datatable cdn -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<style type="text/css">
+  
+  .footer-dev{
+    text-decoration: none !important;
+    color: #00254a;
+    background: #dfdfdf;
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+  #foo{
+    font-size: 19px;
+    background-color: #d3d3d3;
+    padding: 0px 12px 0px 12px;
+    border-radius: 5px;
+  }
+
+  .linux-cmd-btn{
+    float: right !important;
+    width: 49px;
+    height: 30px;
+    background-color: #292929 !important;
+    border-color: #202020 !important;
+    border-radius: 9px;
+  }
+
+    .linux-cmd-btn:hover{
+    background-color: #000000 !important;
+    border-color: #202020 !important;
+    border-radius: 9px;
+  }
+
+  #linux-table_filter{
+    display: none !important;
+  }
+
+
+</style>
+
+<script type="text/javascript">
+
+
+
+
+
+//datatable property
+  
+  $(document).ready(function() {
+    $('#linux-table').DataTable({
+  "columnDefs": [
+    { "width": "50%", "targets": 0 }
+  ]
+});
+} );
+
+
+  //Use cystom search bar on datatable
+  $(document).ready(function() {
+   var table = $('#linux-table').DataTable();
+
+  $('#datatable-linux').on('keyup change', function () {
+    table.search(this.value).draw();
+  });
+} );
+
+// new ClipboardJS('.bx--snippet-button');
+
+</script>
+
+<div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="assests/img/site-logo.png" alt="" width="200" height="160">
+    <h2>Search Your Linux Command Here :)</h2>
+    <p class="lead">Search your any Linux Command here for your Terminal ( Example: Give file permission in Linux ). I'm sorry if you can't find your desire command. Our team is inserting new commands everyday to make this system more powerful. </p>
+  </div>
+
+   <div class="row">
+        <div class="col-12">
+            <div class="input-group">
+                <input id="datatable-linux" class="form-control border-secondary py-2" type="search" placeholder="search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-12">
+        <table id="linux-table" class="table table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Purpouse</th>
+                <th>Command</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Colleen Hurst</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Sonya Frost</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Jena Gaines</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Quinn Flynn</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Charde Marshall</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Haley Kennedy</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Tatyana Fitzpatrick</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            <tr>
+                <td>Michael Silva</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Paul Byrd</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Gloria Little</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Bradley Greer</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Dai Rios</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Jenette Caldwell</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Yuri Berry</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Caesar Vance</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Doris Wilder</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Angelica Ramos</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Gavin Joyce</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Jennifer Chang</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Brenden Wagner</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Fiona Green</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Shou Itou</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Michelle House</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Suki Burks</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Prescott Bartlett</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Gavin Cortez</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Martena Mccray</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Unity Butler</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Howard Hatfield</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Hope Fuentes</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Vivian Harrell</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Timothy Mooney</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Jackson Bradshaw</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Olivia Liang</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Bruno Nash</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Sakura Yamamoto</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Thor Walton</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Finn Camacho</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Serge Baldwin</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Zenaida Frank</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Zorita Serrano</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Jennifer Acosta</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Cara Stevens</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+                
+            </tr>
+            <tr>
+                <td>Hermione Butler</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+              
+            </tr>
+            <tr>
+                <td>Lael Greer</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Jonas Alexander</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Shad Decker</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Michael Bruce</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+            <tr>
+                <td>Donna Snider</td>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+    <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
+  </button>
+</div></td>
+               
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Purpouse</th>
+                <th>Command</th>
+            
+            </tr>
+        </tfoot>
+    </table>
+  </div>
+</div>
+
+
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <a class="footer-dev" href="https://abidhasan.me" target="_blank">Developed by abid_hasan112 </a><br><br>
+    <a target="_blank" href="https://www.buymeacoffee.com/abidhasan"><img src="assests/img/buy-me-a-coffee.png"></a>
+  </footer>
+</div>
