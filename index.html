@@ -61,6 +61,30 @@
 
 <script type="text/javascript">
 
+  // copy to the clipboard
+
+$(document).ready(function() {
+var buttons = document.querySelectorAll("table button")
+
+function clickButton(){ 
+  var myTemporaryInputElement = document.createElement("input");
+    myTemporaryInputElement.type = "text";
+    myTemporaryInputElement.value = this.parentNode.querySelector("pre code").innerHTML;
+
+    document.body.appendChild(myTemporaryInputElement);
+
+    myTemporaryInputElement.select();
+    document.execCommand("Copy");
+
+    document.body.removeChild(myTemporaryInputElement);
+
+}
+for (let i = 0; i < buttons.length; i++) {
+     buttons[i].addEventListener("click", clickButton);
+ }
+ } );
+
+
 
 
 
@@ -86,7 +110,6 @@
   });
 } );
 
-// new ClipboardJS('.bx--snippet-button');
 
 </script>
 
@@ -363,7 +386,7 @@
             </tr>
             <tr>
                 <td>Michelle House</td>
-                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm2 install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
     <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
   </button>
 </div></td>
@@ -395,7 +418,7 @@
             </tr>
             <tr>
                 <td>Martena Mccray</td>
-                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
+                <td><div class="code-sneppit"><pre style="float: left;"><code id="foo">npm9 install --save carbon-components</code></pre><span></span><button data-copy-btn data-clipboard-target="#foo" class="btn-primary linux-cmd-btn bx--snippet-button" aria-label="Copy code" tabindex="0"><i class="fa fa-copy"></i>
     <div class="bx--btn--copy__feedback" data-feedback="Copied!"></div>
   </button>
 </div></td>
